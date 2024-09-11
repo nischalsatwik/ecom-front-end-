@@ -1,3 +1,6 @@
+body{
+  background-image: linear-gradient(to right, #4C1E4F, #a6b947);
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +42,24 @@
 
 .read-the-docs {
   color: #888;
+}
+/*home component */
+.home{
+  background-color: aqua;
+}
+.home-head{
+  text-shadow: 5px;
+  text-decoration: solid;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  animation: slide 2s ease-in 1;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%); /* Adjust the value to match the width */
+  }
 }

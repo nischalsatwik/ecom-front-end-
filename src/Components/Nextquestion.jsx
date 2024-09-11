@@ -5,7 +5,7 @@ function Nextquestion(){
         <div>
             <h1>Final Question</h1>
             <button>gone</button>
-            <button onClick={()=>navigate('business')}> businesscard</button>
+            <button onClick={()=>navigate('/business')}> businesscard</button>
         </div>
     )
  }
