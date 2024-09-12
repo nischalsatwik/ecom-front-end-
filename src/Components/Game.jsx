@@ -45,8 +45,9 @@ export default function Game(){
     }
     
     return(<div>
+        <h1>Game time</h1>
         <input type="text"  onChange={e=>setP2(e.target.value)} ></input>
-        <button onClick={calculate} disabled={disable? true : false}>Showup</button>
+        <button className='game-show' onClick={calculate} disabled={disable? true : false}>Showup</button>
         <p>{p5}</p>
         <h1>{p3.join(",")}</h1>
         {disable &&(

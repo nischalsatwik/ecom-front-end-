@@ -5,10 +5,10 @@ function Secondquestion() {
   return (
     <div>
       <h1>Just a small game</h1>
-      <button onClick={()=>navigate("/game")}>
+      <button className="sec-game" onClick={()=>navigate("/game")}>
         Game
       </button>
-      <button>No Game</button>
+      <button className='sec-no' onClick={()=>navigate('/game')}>No Game</button>
     </div>
   );
 }

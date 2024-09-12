@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to right, #4C1E4F, #a6b947);
+  background-color:black;
 }
 #root {
   max-width: 1280px;
@@ -8,44 +8,68 @@ body{
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/*buttons */ 
+button {
+  font-size: 18px !important;
+  color: greenyellow !important;
+  font-family: inherit !important;
+  font-weight: 800 !important;
+  cursor: pointer !important;
+  position: relative !important;
+  border: none !important;
+  background: none !important;
+  text-transform: uppercase !important;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition-duration: 400ms !important;
+  transition-property: color !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:focus,
+button:hover {
+  color: #fff !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:focus:after,
+button:hover:after {
+  width: 100% !important;
+  left: 0% !important;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+button:after {
+  content: "" !important;
+  pointer-events: none !important;
+  bottom: -2px !important;
+  left: 50% !important;
+  position: absolute !important;
+  width: 0% !important;
+  height: 2px !important;
+  background-color: #fff !important;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition-duration: 400ms !important;
+  transition-property: width, left !important;
 }
 /*home component */
-.home{
-  background-color: aqua;
+
+.home-ip {
+  background-color: #212121;
+  max-width: 190px;
+  height: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size:large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-ip:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: greenyellow;
+  box-shadow: -3px -3px 15px greenyellow;
+  transition: .1s;
+  transition-property: box-shadow;
 }
 .home-head{
   text-shadow: 5px;
@@ -54,12 +78,28 @@ body{
   border-radius: 10px;
   padding: 5px;
   animation: slide 2s ease-in 1;
+  color: #213547;
+}
+.home-Info,.home-workexp{
+  animation:slide 1s ease-out 1 ;
 }
 @keyframes slide {
   0% {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0%); /* Adjust the value to match the width */
+    transform: translateX(0%); 
   }
+}
+.Home-ip-enter{
+  margin-left: 100px;
+}
+
+/*Info component */
+.hidden{
+  display:none;
+}
+.RRR:hover+.hidden{
+  display:inline;
+  width: 100px;
 }
