@@ -25,7 +25,9 @@ function Home(){
             </div></>}
             {!vis&&<><h1 className="home-head">What do you want to visit {inputname}</h1>
             <button className="home-Info" onClick={()=>navigate("/Info")} style={{ transition: 'all 0.5s ease-in-out' }}>Info</button>
-            <button className="home-workexp" >Work experience</button> </>}
+            <button className="home-workexp" >Work experience and Projects</button> 
+            <button>Achievements</button>
+            <button>Games</button></>}
         </div>
     )
  }

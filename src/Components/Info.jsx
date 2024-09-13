@@ -3,7 +3,7 @@ function Info(){
     const navigate=useNavigate();
     function handle()
     {
-        navigate("/second");
+        navigate("/home");
     }
     return(
         <div>
@@ -12,7 +12,7 @@ function Info(){
             <p>I love watching films of different Genres. Some of the films which I like <span className="RRR">RRR</span><img src="src\Images\RRR.jfif" className="hidden"></img>, Master and KGF</p>
             <p>I play a lot of games on mobile and outdoor too. I play outdoor like Football,Cricket,Badminton and mobile games BGMI</p>
             <p>By the way I&apos;m learning chess this is my id just throw me a freind request we will play together</p>
-            <button onClick={handle}>Next</button>
+            <button onClick={handle}>Back</button>
             
         </div>
     );

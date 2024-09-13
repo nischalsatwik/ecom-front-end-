@@ -20,9 +20,9 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home/> }></Route>
         <Route path="/info" element={<Info/> }></Route>
-        <Route path="/second" element={<Secondquestion></Secondquestion>}/>
+        <Route path="/achievments" element={<Secondquestion></Secondquestion>}/>
         <Route path="/game"  element={<Game></Game>}/>
-        <Route path="/next"  element={<Nextquestion></Nextquestion>}/>
+        <Route path="/project"  element={<Nextquestion></Nextquestion>}/>
         <Route path="/business"  element={<Businesscard></Businesscard>}/>
       </Routes>
     </div>
