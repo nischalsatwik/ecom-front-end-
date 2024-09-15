@@ -1,20 +1,13 @@
 body{
   background-color:black;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 
 /*buttons */ 
 button {
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: greenyellow !important;
   font-family: inherit !important;
-  font-weight: 800 !important;
+  font-weight: 500 !important;
   cursor: pointer !important;
   position: relative !important;
   border: none !important;
@@ -25,9 +18,12 @@ button {
   transition-property: color !important;
 }
 
-button:focus,
+button:focus
+{
+  color:black !important;
+}
 button:hover {
-  color: #fff !important;
+  color: white !important;
 }
 
 button:focus:after,
@@ -44,13 +40,43 @@ button:after {
   position: absolute !important;
   width: 0% !important;
   height: 2px !important;
-  background-color: #fff !important;
+  background-color: greenyellow !important;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   transition-duration: 400ms !important;
   transition-property: width, left !important;
+  text-decoration: none;
 }
 /*home component */
-
+.home{
+  margin-top: 70px;
+}
+.home-first{
+  outline-color: rgb(0, 255, 255) ;
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow; 
+  margin-left:300px;
+}
+.home-head{
+  text-align: center;
+}
+.home-made{
+  border:5px solid red;
+  margin-left:40px; 
+  color: #213547;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#eefc5e;
+  width:1280px;
+  height:370px;
+  margin-top: -30px;
+}
+.home-just{
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+}
 .home-ip {
   background-color: #212121;
   max-width: 190px;
@@ -71,35 +97,155 @@ button:after {
   transition: .1s;
   transition-property: box-shadow;
 }
-.home-head{
-  text-shadow: 5px;
-  text-decoration: solid;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  animation: slide 2s ease-in 1;
-  color: #213547;
-}
+
 .home-Info,.home-workexp{
   animation:slide 1s ease-out 1 ;
 }
-@keyframes slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%); 
-  }
-}
+
 .Home-ip-enter{
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+}
+.home-details{
+ font-size: 30px;
+ text-align:left;
+}
+.home-ul{
+  border:5px solid black;
+}
+.home-final{
+  font-size: 30px;
+  text-align: center;
+  margin-left: 30px;
+  color: yellowgreen;
+}
+/*Info component */
+.info{
+  display: block;
+  background-color: #eefc5e;
+  align-items: center;
+  height: 500px;
+}
+.info-head{
+  font-size: 40px;
+  color:#213547;  
+  margin-left: 200px;
+}
+.info-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-body-head{
+  color: #213547;
+  text-align: center;
+}
+.info-body-inside{
+  background-color:#eefc5e;
+  border: 1px solid black;
+  height:300px;
+  width:350px;
+}
+.info-body-img{
+  width:350px;
+  height:110px;
+  transition: transform .2s;
+}
+.info-body-img:hover{
+    transform: scale(1.5);
+}
+.info-body-text{
+  text-align: center;
+  font-weight: 600;
+}
+.info-body-text-li{
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 600;
+}
+/*Navbar */
+.navbar{
+display: flex;
+align-items: center !important;
+justify-content: center;
+font-weight: 400;
+margin-top:50px;
+margin-left:30px;
+}
+/*workexp*/
+.work{
+  background-color: #eefc5e;
+  width: 1360px;
+  height: 500px;
+}
+.work-head{
+  margin-left: 30px;
+}
+.work-body-div{ 
+  display: block;
+  border:1px solid black;
 }
 
-/*Info component */
-.hidden{
-  display:none;
+.work-body{
+  display: flex;
+  background-color:#eefc5e;
+  
 }
-.RRR:hover+.hidden{
-  display:inline;
+.work-body-li{
+  text-align: center;
+  font-size: 24px;
+}
+.work-sail{
+  width:370px;
+  height: 203px;
+  margin-bottom: -5px;
+}
+.work-meta{
+  width:380px;
+  height: 203px;
+  margin-bottom: -5px;
+}
+.work-body-ul{
+  margin-top:40px;  
+}
+.work-body-shop,.work-body-game{
+  width:298px;
+  height:197px;
+  margin-top: 10px;
+}
+.work-sail:hover,.work-body-game:hover,.work-body-shop:hover,.work-meta:hover{
+  transform: scale(1.5);
+}
+/*Tictactoe*/
+.div11{
   width: 100px;
+  height: 100px;
+  color: black;
+  background-color: white;
+  font-size: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+.tic-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+vertical-align: middle;
+line-height: 100px;
+
+}
+.tic{
+  display: block;
+}
+#tic-head,.tic-back{
+  text-align: center;
+}
+.tic-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick-win{
+  text-align: center;
 }

@@ -1,19 +1,35 @@
-import { useNavigate } from "react-router-dom";
 function Info(){
-    const navigate=useNavigate();
-    function handle()
-    {
-        navigate("/home");
-    }
     return(
-        <div>
-            <h1>I&apos;m Nischal Satwik.</h1>
-            <p>I hail from Vizianagaram dst , Andhrapradesh. I&apos;m knowing languages like telugu,hindi,english and I&apos;m learning tamil and Kannada. </p>
-            <p>I love watching films of different Genres. Some of the films which I like <span className="RRR">RRR</span><img src="src\Images\RRR.jfif" className="hidden"></img>, Master and KGF</p>
-            <p>I play a lot of games on mobile and outdoor too. I play outdoor like Football,Cricket,Badminton and mobile games BGMI</p>
-            <p>By the way I&apos;m learning chess this is my id just throw me a freind request we will play together</p>
-            <button onClick={handle}>Back</button>
-            
+        <div className="info">
+            <h1><span className="info-head">I&apos;m Nischal Satwik. A fullstack developer I&apos;m learning various technologies and implementing them. I believe
+            Learning is fun.</span>
+            </h1>
+            <div className="info-body">
+                <div className="info-body-inside">
+                    <h1 className="info-body-head">Education</h1>
+                    <p className="info-body-text">Studied ECE at lendi institute of engineering and technology</p>
+                    <img className="info-body-img" src="src\Images\lendi.jpg"></img>
+                </div>
+                <div className="info-body-inside">
+                    <h1 className="info-body-head">Hobbies</h1>
+                    <ul>
+                        <li className="info-body-text-li">Playing cricket,football,badminton and mobile games like BGMI</li>
+                        <li className="info-body-text-li">Singing and I&apos;m learning Keyboard</li>
+                        <li className="info-body-text-li">Watching movies by the way I watch different languages</li>
+                    </ul>
+                </div>
+                <div className="info-body-inside">
+                    <h1 className="info-body-head">Tools learnt</h1>
+                    <ul>
+                        <li className="info-body-text-li">Spring Boot </li>
+                        <li className="info-body-text-li">React </li>
+                        <li className="info-body-text-li">Mysql </li>
+                        <li className="info-body-text-li">Git </li>
+                        <li className="info-body-text-li">Javascript,Java,Python</li>
+                        <li className="info-body-text-li">Ms Excel</li>
+                    </ul>
+                </div> 
+            </div>  
         </div>
     );
 }

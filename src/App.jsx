@@ -1,29 +1,30 @@
-import { useEffect, useState } from 'react';
 import Home from "./Components/Home";
 import Info from "./Components/Info";
-import Secondquestion from './Components/Secondquestion';
+import Workexp from './Components/Workexp';
 import Game from "./Components/Game";
-import Nextquestion from './Components/Nextquestion';
+import NumberGame  from "./Components/Games and Quiz/NumberGame";
+import Tictactoe from "./Components/Games and Quiz/Tictactoe";
+import Achievments from './Components/Achievements';
 import Businesscard from './Components/Businesscard';
-import {Route, Routes,useNavigate } from 'react-router-dom'; 
+import {Route, Routes } from 'react-router-dom'; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './App.css';
+import Navbar from "./Components/Navbar"
 ;
 function App() {  
-  const navigate=useNavigate();
-  function handle(){
-    navigate("/home")
-  }
   return (
     
     <div>
-      <button className='App-home' onClick={handle}>Home</button>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/home" element={<Home/> }></Route>
         <Route path="/info" element={<Info/> }></Route>
-        <Route path="/achievments" element={<Secondquestion></Secondquestion>}/>
+        <Route path="/work" element={<Workexp></Workexp>}/>
         <Route path="/game"  element={<Game></Game>}/>
-        <Route path="/project"  element={<Nextquestion></Nextquestion>}/>
+        <Route path="/achievements"  element={<Achievments></Achievments>}/>
         <Route path="/business"  element={<Businesscard></Businesscard>}/>
+        <Route path="/game/Numbergame" element={<NumberGame></NumberGame>}/>
+        <Route path="/game/Tictactoe" element={<Tictactoe></Tictactoe>}/>
       </Routes>
     </div>
   );
