@@ -7,7 +7,8 @@ import Tictactoe from "./Components/Games and Quiz/Tictactoe";
 import Achievments from './Components/Achievements';
 import Businesscard from './Components/Businesscard';
 import {Route, Routes } from 'react-router-dom'; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from "./Components/Navbar"
 ;

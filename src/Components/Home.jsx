@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useNavigate } from "react-router-dom";
 import {useState} from "react";
 function Home(){
     const [vis,setVis]=useState(true);
-       const navigate=useNavigate();
+
        const [inputname,setinput]=useState();
        function handle()
        
@@ -19,11 +18,11 @@ function Home(){
        }
     return(
         <div className="home">
-                {vis&&<><h1><span className="home-first">Hello what&apos;s your name !</span> </h1>
+                {vis&&<div className="home-vis"><h1><span className="home-first">Hello what&apos;s your name !</span> </h1>
                 <div className="Home-ip-enter">
                     <input type="text" maxLength={10} className="home-ip" onChange={(e)=>setinput(e.target.value)} ></input>
                     <button className="home-enter" onClick={handle}>Enter</button>
-                </div></>}
+                </div></div>}
                 {!vis&&<div className="home-made">
                     <h1 className="home-head">Welcome {inputname} you can click on the following</h1> 
                     <ul className="home-ul">

@@ -1,8 +1,8 @@
 function Info(){
     return(
         <div className="info">
-            <h1><span className="info-head">I&apos;m Nischal Satwik. A fullstack developer I&apos;m learning various technologies and implementing them. I believe
-            Learning is fun.</span>
+            <h1 className="info-head">I&apos;m Nischal Satwik. A fullstack developer I&apos;m learning various technologies and implementing them. I believe
+            Learning is fun.
             </h1>
             <div className="info-body">
                 <div className="info-body-inside">

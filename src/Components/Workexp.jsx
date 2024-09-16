@@ -15,7 +15,7 @@ function Workexp() {
           <div className="work-body-div">
             <h3 className="work-body-li">Meta</h3>
             <ul>
-              <li>Worked as a team lead for 15 people</li>
+              <li >Worked as a team lead for 15 people</li>
               <li>Tested Meta applications</li>
               <li>Did Localization,accessibility and manual testing</li>
             </ul>
