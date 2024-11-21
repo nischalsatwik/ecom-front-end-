@@ -1,33 +1,24 @@
-import Home from "./Components/Home";
-import Info from "./Components/Info";
-import Workexp from './Components/Workexp';
-import Game from "./Components/Game";
-import NumberGame  from "./Components/Games and Quiz/NumberGame";
-import Tictactoe from "./Components/Games and Quiz/Tictactoe";
-import Achievments from './Components/Achievements';
-import Businesscard from './Components/Businesscard';
-import {Route, Routes } from 'react-router-dom'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Navbar from "./Components/Navbar"
-;
-function App() {  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import Create from "./Components/Create"
+import Login from "./Components/Login"
+import Home from "./Components/Home"
+import Cart from "./Components/Cart"
+import Wallet from "./Components/Wallet"
+import Profile from "./Components/Profile"
+import { Route,Routes} from 'react-router-dom';
+function App() { 
   return (
-    
-    <div>
-      <Navbar></Navbar>
-      <Routes>
-        <Route path="/home" element={<Home/> }></Route>
-        <Route path="/info" element={<Info/> }></Route>
-        <Route path="/work" element={<Workexp></Workexp>}/>
-        <Route path="/game"  element={<Game></Game>}/>
-        <Route path="/achievements"  element={<Achievments></Achievments>}/>
-        <Route path="/business"  element={<Businesscard></Businesscard>}/>
-        <Route path="/game/Numbergame" element={<NumberGame></NumberGame>}/>
-        <Route path="/game/Tictactoe" element={<Tictactoe></Tictactoe>}/>
-      </Routes>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Login></Login>}></Route>
+      <Route path="/createnew" element={<Create></Create>}></Route>
+      <Route path="/home" element={<Home></Home>}></Route>
+      <Route path="/cart" element={<Cart></Cart>}></Route>
+      <Route path="/wallet" element={<Wallet></Wallet>}></Route>
+      <Route path="/profile" element={<Profile></Profile>}></Route>
+    </Routes>
+    </>
   );
 }
 
